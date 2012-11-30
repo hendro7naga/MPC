@@ -6,20 +6,23 @@
 <style type="text/css">
 body{background-color:#E9E9E9}
 #bodyContent{width:960px; height:auto;	margin:0 auto;}
-header{width:960px; height:80px; margin:0 auto; background-color:#EEC499;}
+header{width:960px; height:80px; margin:0 auto; text-shadow:0 0 2px #fefae8; background-color:#f1d5ad;}
+.blankLeft{width:120px; height:30px; background-color:black; position:absolute; margin:10px 0 0 15px;}
+.blankRight{width:90px; height:25px; background-color:black; position:relative; margin:10px 5px 10px 0; float:right;}
 #logMenu{float:right; margin:0; padding-right:10px;}
 #logMenu ul li a{font-family:"Tahoma", Geneva, sans-serif; font-size:14px; color:white; margin-right:15px; position:static;}
 ul{list-style:none; margin:0; padding:0;}
 li{display:inline;}
-.menu{width:970px; height:30px; background-color:#E3A217; border:1px solid #FA6; position:absolute; right:12.3em; margin-top:2.5em;}
-#navMenu{float:left; display:inline; padding-left:20px;}
-#navMenu ul li a{color:white; padding:5px;}
-#search{float:right; padding-right:20px; display:inline;}
+.menu{width:970px; height:30px; background-color:#f1b157; border:1px solid #f1b157; position:fixed; right:12.4em; margin-top:2.8em;}
+#navMenu{float:left; padding-left:20px; margin-top:5px;}
+#navMenu ul li{font-family:Tahoma, Geneva, sans-serif; font-size:15px; text-align:center; height:10px;}
+#navMenu ul li a{color:#fefae8; padding:5px;}
+#search{float:right; padding-right:20px;}
 a{text-decoration:none; color:#C93;}
 a:hover{text-decoration:underline; color:#666;}
 button{height:20px; background-color:#373737; color:#C93; font-size:12px; border:0;}
-#contentSide{width:540px; height:460px; background:url(Challenge/readThis-ribbon.png) left top no-repeat white; border:1px solid #CCC; position:static; float:left; margin-top:20px;}
-#rightSide{width:390px; height:360px; background:url(Challenge/signup-ribbon.png) left top no-repeat white; border:1px solid #CCC; position:relative; float:right; margin-top:20px;}
+#contentSide{width:540px; height:460px; background:url(readThis-ribbon.png) left top no-repeat white; border:1px solid #CCC; position:static; float:left; margin-top:20px;}
+#rightSide{width:390px; height:360px; background:url(signup-ribbon.png) left top no-repeat white; border:1px solid #CCC; position:relative; float:right; margin-top:20px;}
 table{width:360px; margin-top:40px; margin-left:40px;}
 td:first-child{font-family:"Arial", Helvetica, sans-serif; font-size:14px; font-weight:bold; color:#333; width:95px;}
 td>p{width:220px; margin-top:-4px; margin-bottom:5px;}
@@ -30,8 +33,10 @@ footer{text-align:right; margin-right:5px;}
 </head>
 
 <body>
-	<header>        
+	<header>
+    	<span class="blankLeft"> </span>
         <section id="logMenu">
+        	
         	<ul>
             	<li><a href="#">Become Author</a></li>
                 <li><a href="#">Sign In</a></li>
@@ -61,6 +66,7 @@ footer{text-align:right; margin-right:5px;}
     </section>
     
     <section id="rightSide">
+    	<span class="blankRight"></span>
     	<form name="signUp">
         	<table>
             	<tr>
